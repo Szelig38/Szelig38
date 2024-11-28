@@ -29,7 +29,7 @@ def run_query(query):
     rows = [dict(row) for row in rows_raw]
     return rows
 
-rows = run_query("SELECT  FROM `sst-sandbox-356409.logs.appengine_googleapis_com_nginx_health_check_20241128` LIMIT 10")
+rows = run_query("SELECT logName FROM `sst-sandbox-356409.logs.appengine_googleapis_com_nginx_health_check_20241128` LIMIT 10")
 
 # Print results.
 st.write("Przykładowe dane z naszego BQ")
