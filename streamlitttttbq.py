@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/132cQPCN_WH3-zLwwRNsAYUbVdufKJdb2
 """
 
-!pip install streamlit
-
 import streamlit as st
 from google.oauth2 import service_account
 from google.cloud import bigquery
