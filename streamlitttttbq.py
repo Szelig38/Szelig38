@@ -10,7 +10,7 @@ Original file is located at
 import streamlit as st
 from google.oauth2 import service_account
 from google.cloud import bigquery
-
+pip install -r requirements.txt
 # Pobierz poświadczenia z secrets
 credentials = service_account.Credentials.from_service_account_info(
     st.secrets["gcp_service_account"]
