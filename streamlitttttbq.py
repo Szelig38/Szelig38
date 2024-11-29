@@ -31,9 +31,9 @@ def run_query(query):
     rows = [dict(row) for row in rows_raw]
     return rows
 
-rows = run_query("SELECT logName FROM `sst-sandbox-356409.logs.appengine_googleapis_com_nginx_health_check_20241128` LIMIT 10")
+rows = run_query("SELECT event_name FROM `johnleggy.analytics_218343504.events_20241126` LIMIT 10")
 
 # Print results.
 st.write("Przykładowe dane z naszego BQ")
 for row in rows:
-    st.write("✍️ " + row['logName'])
+    st.write("✍️ " + row['event_name'])
