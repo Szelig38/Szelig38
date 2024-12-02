@@ -29,8 +29,8 @@ def app():
         purchase_revenue_in_usd,
         items.item_name AS item_name,
         items.item_revenue_in_usd AS item_revenue
-    FROM `analytics_218343504.events_20241128`
-    LIMIT 1000
+    FROM `johnleggy.analytics_218343504.events_20241128`
+    LIMIT 10
     """
     data = run_query(query)
 
