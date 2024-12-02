@@ -16,7 +16,7 @@ import os
 
 import Home, Trending, Account, GA4, GoogleAds, Ecommerce
 st.set_page_config(
-        page_title="Pondering",
+        page_title="JohnLeggyData",
 )
 class MultiApp:
 
