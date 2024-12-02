@@ -7,7 +7,8 @@ from google.cloud import bigquery
 
 def app():
 # Pobierz poĹ›wiadczenia z secrets
-credentials = service_account.Credentials.from_service_account_info(
+credentials =
+service_account.Credentials.from_service_account_info(
     st.secrets["gcp_service_account"]
 )
 
