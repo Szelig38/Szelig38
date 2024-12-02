@@ -16,7 +16,7 @@ import os
 
 import Home, Trending, Account, GA4, GoogleAds, Ecommerce
 st.set_page_config(
-        page_title="JohnLeggyData",
+        page_title="JohnLeggy",
 )
 class MultiApp:
 
@@ -34,7 +34,7 @@ class MultiApp:
         # app = st.sidebar(
         with st.sidebar:        
             app = option_menu(
-                menu_title='JohnLeggyData',
+                menu_title='JohnLeggy',
                 options=['Home','Account','Trending','Ecommerce','GoogleAds','GA4'],
                 icons=['house-fill','person-circle','trophy-fill','chat-fill','info-circle-fill'],
                 menu_icon='chat-text-fill',
