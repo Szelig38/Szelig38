@@ -7,8 +7,10 @@ import json
 import requests
 
 
-cred = credentials.Certificate("pondering-5ff7c-c033cfade319.json")
-firebase_admin.initialize_app(cred)
+cred = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"]
+client = bigquery.Client(credentials=credentials)
+
 def app():
 # Usernm = []
     st.title('Welcome to :violet[Pondering] :sunglasses:')
