@@ -1,11 +1,14 @@
 import streamlit as st
 
 from streamlit_option_menu import option_menu
+
+import home, trending, account, your, about, buy_me_a_coffee
+
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
-import home, trending, account, your, about, buy_me_a_coffee
+
 st.set_page_config(
         page_title="Johnleggy",
 )
