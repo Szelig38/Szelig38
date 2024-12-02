@@ -3,4 +3,6 @@ google-auth
 google-auth-oauthlib
 google-auth-httplib2
 streamlit_option_menu
-dotenv
+firebase_admin
+streamlit
+python-dotenv
