@@ -38,7 +38,7 @@ LIMIT 100
 
     # Przetwarzanie danych
     df = pd.DataFrame(data)
-    df['event_date'] = pd.to_datetime(df['event_date'], format='%Y%m%d')
+    df['event_date'] = pd.Timestamp.now()
 
     # Tytuł
     st.title("Analiza danych e-commerce")
