@@ -21,16 +21,18 @@ def app():
     # Pobranie danych
     query = """
     SELECT 
-        event_date, 
-        event_name, 
-        user_pseudo_id, 
-        geo.country AS country, 
-        geo.city AS city,
-        purchase_revenue_in_usd,
-        items.item_name AS item_name,
-        items.item_revenue_in_usd AS item_revenue
-    FROM `johnleggy.analytics_218343504.events_20241128`
-    LIMIT 10
+    event_date, 
+    event_name, 
+    user_pseudo_id, 
+    geo.country AS country, 
+    geo.city AS city,
+    item.item_name AS item_name,
+    item.item_revenue_in_usd AS item_revenue
+FROM 
+    `analytics_218343504.events_20241128`,
+    UNNEST(items) AS item
+LIMIT 100
+
     """
     data = run_query(query)
 
