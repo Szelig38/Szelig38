@@ -5,6 +5,7 @@ import pandas as pd
 from google.oauth2 import service_account
 from google.cloud import bigquery
 
+def app():
 # Pobierz poĹ›wiadczenia z secrets
 credentials = service_account.Credentials.from_service_account_info(
     st.secrets["gcp_service_account"]
