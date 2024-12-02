@@ -9,10 +9,18 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
+from google.oauth2 import service_account
+from google.cloud import bigquery
 from streamlit_option_menu import option_menu
-import GA4, GoogleAds, Home, Account, Trending, Ecommerce
 import os
 
+
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"]
+)
+
+# UtwĂłrz klienta BigQuery
+client = bigquery.Client(credentials=credentials)
 
 import Home, Trending, Account, GA4, GoogleAds, Ecommerce
 st.set_page_config(
