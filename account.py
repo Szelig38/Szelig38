@@ -7,9 +7,5 @@ import json
 import requests
 
 
-cred = service_account.Credentials.from_service_account_info(
-    st.secrets["gcp_service_account"])
-client = bigquery.Client(credentials=credentials)
-
 def app():
-        dad
+    st.write(account)
