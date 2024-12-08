@@ -1,4 +1,4 @@
 import streamlit as st
 
-def app():
-    about
+ def app():
+    st.write(about)
