@@ -1,4 +1,4 @@
 import streamlit as st
 
 def app():
-    st.write(coffee)
+    st.write('coffee')
