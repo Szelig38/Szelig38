@@ -6,4 +6,3 @@ streamlit_option_menu
 firebase_admin
 streamlit
 python-dotenv
---upgrade pip
