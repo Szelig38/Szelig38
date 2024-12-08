@@ -8,4 +8,17 @@ import requests
 
 
 def app():
-    st.write('account')
+        st.title('Welcome to :violet[JohnleggyDataHub] :sunglasses:')
+
+        choice = st.selectbox('Login/Signup',['Login','Sign Up'])
+        if choice=='Login':
+
+            email=st.text_input('Email Address')
+            password = st.text_input('Password', type='password')
+            
+            st.button('Login')
+
+        else:
+
+            email=st.text_input('Email Address')
+            password = st.text_input('Password', type='password')
