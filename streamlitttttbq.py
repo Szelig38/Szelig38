@@ -2,7 +2,7 @@ import streamlit as st
 
 from streamlit_option_menu import option_menu
 
-import home, trending, account, your, about, buy_me_a_coffee
+import home,account,trending,your,about,buy_me_a_coffee
 
 import os
 from dotenv import load_dotenv
